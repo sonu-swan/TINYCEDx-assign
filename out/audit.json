@@ -1,0 +1,1637 @@
+{
+  "case_id": "CEDX-XXXX",
+  "pipeline_version": "tinycedx-v2",
+  "generated_at": "2026-07-03T11:52:08.878702+00:00",
+  "seed_dir": "/app/seed",
+  "pipeline_now": "2026-06-26",
+  "amendment": {
+    "role": "legal_counsel",
+    "threshold": 30000
+  },
+  "agents": [
+    {
+      "name": "orchestrator",
+      "role": "orchestrator",
+      "models": [],
+      "can_call": [
+        "worker",
+        "verifier",
+        "operator"
+      ]
+    },
+    {
+      "name": "worker",
+      "role": "worker",
+      "models": [
+        "gpt-4o-mini",
+        "claude-3-5-haiku"
+      ],
+      "can_call": []
+    },
+    {
+      "name": "verifier",
+      "role": "verifier",
+      "models": [
+        "gpt-4o-mini"
+      ],
+      "can_call": []
+    },
+    {
+      "name": "operator",
+      "role": "operator",
+      "models": [],
+      "can_call": []
+    }
+  ],
+  "cost": {
+    "total_usd": 0.000457,
+    "avg_usd_per_record": 2e-05,
+    "p95_latency_ms": 0.0,
+    "records": 23,
+    "projected_usd_per_10k": 0.2
+  },
+  "output_package_hash": "sha256:11ebe70d520b299c84e4f4e2aa489651b5067b7778b55e6432f9f8f924151673",
+  "records": [
+    {
+      "id": "REC-017",
+      "version": 1,
+      "source_format": "feed",
+      "source_version_hash": "sha256:a86b049dac479b52a2382f367327d0355fb7f569a13f2f2775fdab21b13255cf",
+      "status": "superseded",
+      "reason_code": "SUPERSEDED_VERSION",
+      "reason_class": "B",
+      "transcript_hash": null,
+      "delivered_fields": null,
+      "delivered_fields_hash": null,
+      "agent_trace": [],
+      "approval_trail": []
+    },
+    {
+      "id": "REC-001",
+      "version": 1,
+      "source_format": "feed",
+      "source_version_hash": "sha256:af4223a54c446439c4e42d8b342e5a40541196b4df1618d801dcfa973c9da5ad",
+      "status": "delivered",
+      "reason_code": null,
+      "reason_class": null,
+      "transcript_hash": "sha256:3c8838de82f6fcf1f2fc4c7a634fe5cfad235680c6c5151818174ac7dcf7af0c",
+      "delivered_fields": {
+        "id": "REC-001",
+        "owner": "a.shah",
+        "category": "ONBOARDING",
+        "amount": 4800.0,
+        "deadline": "2026-07-15",
+        "branded_summary": "CEDX work item REC-001 (ONBOARDING) for a.shah, amount 4800.0."
+      },
+      "delivered_fields_hash": "sha256:3c8838de82f6fcf1f2fc4c7a634fe5cfad235680c6c5151818174ac7dcf7af0c",
+      "agent_trace": [
+        {
+          "agent": "worker",
+          "model": "gpt-4o-mini",
+          "prompt_version": "worker-v1",
+          "tokens_in": 146,
+          "tokens_out": 60,
+          "cost_usd": 3.1e-05,
+          "latency_ms": 0.01,
+          "retries": 0,
+          "transcript_hash": "sha256:3c8838de82f6fcf1f2fc4c7a634fe5cfad235680c6c5151818174ac7dcf7af0c",
+          "status": "ok"
+        },
+        {
+          "agent": "verifier",
+          "status": "ok",
+          "verdict": "pass",
+          "cost_usd": 0.0,
+          "latency_ms": 0.0,
+          "retries": 0
+        }
+      ],
+      "approval_trail": [
+        {
+          "state": "draft",
+          "actor": "orchestrator",
+          "ts": "2026-07-03T11:52:08.627388+00:00",
+          "reason": null
+        },
+        {
+          "state": "in_review",
+          "actor": "orchestrator",
+          "ts": "2026-07-03T11:52:08.627393+00:00",
+          "reason": null
+        },
+        {
+          "state": "approved",
+          "actor": "operator:reviewer",
+          "ts": "2026-07-03T11:52:08.628153+00:00",
+          "reason": null
+        },
+        {
+          "state": "delivered",
+          "actor": "orchestrator",
+          "ts": "2026-07-03T11:52:08.628165+00:00",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": "REC-002",
+      "version": 1,
+      "source_format": "feed",
+      "source_version_hash": "sha256:6adc60795047e062b8a1c5cb86373a1dbad601854b96e3e5808a388b78a79afe",
+      "status": "delivered",
+      "reason_code": null,
+      "reason_class": null,
+      "transcript_hash": "sha256:63645136de5fab3f2e7b473dc45d20aeee4bbc8fa4adb3d2dd1d2cdfdcb21b7d",
+      "delivered_fields": {
+        "id": "REC-002",
+        "owner": "b.ortiz",
+        "category": "RENEWAL",
+        "amount": 5200.0,
+        "deadline": "2026-07-20",
+        "branded_summary": "CEDX work item REC-002 (RENEWAL) for b.ortiz, amount 5200.0."
+      },
+      "delivered_fields_hash": "sha256:63645136de5fab3f2e7b473dc45d20aeee4bbc8fa4adb3d2dd1d2cdfdcb21b7d",
+      "agent_trace": [
+        {
+          "agent": "worker",
+          "model": "gpt-4o-mini",
+          "prompt_version": "worker-v1",
+          "tokens_in": 147,
+          "tokens_out": 60,
+          "cost_usd": 3.1e-05,
+          "latency_ms": 0.0,
+          "retries": 0,
+          "transcript_hash": "sha256:63645136de5fab3f2e7b473dc45d20aeee4bbc8fa4adb3d2dd1d2cdfdcb21b7d",
+          "status": "ok"
+        },
+        {
+          "agent": "verifier",
+          "status": "ok",
+          "verdict": "pass",
+          "cost_usd": 0.0,
+          "latency_ms": 0.0,
+          "retries": 0
+        }
+      ],
+      "approval_trail": [
+        {
+          "state": "draft",
+          "actor": "orchestrator",
+          "ts": "2026-07-03T11:52:08.628296+00:00",
+          "reason": null
+        },
+        {
+          "state": "in_review",
+          "actor": "orchestrator",
+          "ts": "2026-07-03T11:52:08.628302+00:00",
+          "reason": null
+        },
+        {
+          "state": "approved",
+          "actor": "operator:reviewer",
+          "ts": "2026-07-03T11:52:08.628583+00:00",
+          "reason": null
+        },
+        {
+          "state": "delivered",
+          "actor": "orchestrator",
+          "ts": "2026-07-03T11:52:08.628593+00:00",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": "REC-003",
+      "version": 1,
+      "source_format": "feed",
+      "source_version_hash": "sha256:6ada3093716cb39647a87e1fe269c7722a27ff904e0305853f9fa4fa27180a0e",
+      "status": "delivered",
+      "reason_code": null,
+      "reason_class": null,
+      "transcript_hash": "sha256:9190bec9354e3333c29e123687234c73fbe3fdf3779c734eb7421c107e7263a6",
+      "delivered_fields": {
+        "id": "REC-003",
+        "owner": "c.nguyen",
+        "category": "REVIEW",
+        "amount": 3900.0,
+        "deadline": "2026-07-10",
+        "branded_summary": "CEDX work item REC-003 (REVIEW) for c.nguyen, amount 3900.0."
+      },
+      "delivered_fields_hash": "sha256:9190bec9354e3333c29e123687234c73fbe3fdf3779c734eb7421c107e7263a6",
+      "agent_trace": [
+        {
+          "agent": "worker",
+          "model": "gpt-4o-mini",
+          "prompt_version": "worker-v1",
+          "tokens_in": 142,
+          "tokens_out": 60,
+          "cost_usd": 3e-05,
+          "latency_ms": 0.0,
+          "retries": 0,
+          "transcript_hash": "sha256:9190bec9354e3333c29e123687234c73fbe3fdf3779c734eb7421c107e7263a6",
+          "status": "ok"
+        },
+        {
+          "agent": "verifier",
+          "status": "ok",
+          "verdict": "pass",
+          "cost_usd": 0.0,
+          "latency_ms": 0.0,
+          "retries": 0
+        }
+      ],
+      "approval_trail": [
+        {
+          "state": "draft",
+          "actor": "orchestrator",
+          "ts": "2026-07-03T11:52:08.628695+00:00",
+          "reason": null
+        },
+        {
+          "state": "in_review",
+          "actor": "orchestrator",
+          "ts": "2026-07-03T11:52:08.628700+00:00",
+          "reason": null
+        },
+        {
+          "state": "approved",
+          "actor": "operator:reviewer",
+          "ts": "2026-07-03T11:52:08.628917+00:00",
+          "reason": null
+        },
+        {
+          "state": "delivered",
+          "actor": "orchestrator",
+          "ts": "2026-07-03T11:52:08.628927+00:00",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": "REC-004",
+      "version": 1,
+      "source_format": "feed",
+      "source_version_hash": "sha256:0bac967547fbc73ef4393a8f1c0a16cc1039edbee875aeb45017d1d9810811e6",
+      "status": "delivered",
+      "reason_code": null,
+      "reason_class": null,
+      "transcript_hash": "sha256:2df06ab25e1da3a69a59499fc503affd3999205e6df9807d0b421f950e481502",
+      "delivered_fields": {
+        "id": "REC-004",
+        "owner": "d.kapoor",
+        "category": "REPORT",
+        "amount": 6100.0,
+        "deadline": "2026-08-01",
+        "branded_summary": "CEDX work item REC-004 (REPORT) for d.kapoor, amount 6100.0."
+      },
+      "delivered_fields_hash": "sha256:2df06ab25e1da3a69a59499fc503affd3999205e6df9807d0b421f950e481502",
+      "agent_trace": [
+        {
+          "agent": "worker",
+          "model": "gpt-4o-mini",
+          "prompt_version": "worker-v1",
+          "tokens_in": 142,
+          "tokens_out": 60,
+          "cost_usd": 3e-05,
+          "latency_ms": 0.0,
+          "retries": 0,
+          "transcript_hash": "sha256:2df06ab25e1da3a69a59499fc503affd3999205e6df9807d0b421f950e481502",
+          "status": "ok"
+        },
+        {
+          "agent": "verifier",
+          "status": "ok",
+          "verdict": "pass",
+          "cost_usd": 0.0,
+          "latency_ms": 0.0,
+          "retries": 0
+        }
+      ],
+      "approval_trail": [
+        {
+          "state": "draft",
+          "actor": "orchestrator",
+          "ts": "2026-07-03T11:52:08.629191+00:00",
+          "reason": null
+        },
+        {
+          "state": "in_review",
+          "actor": "orchestrator",
+          "ts": "2026-07-03T11:52:08.629198+00:00",
+          "reason": null
+        },
+        {
+          "state": "approved",
+          "actor": "operator:reviewer",
+          "ts": "2026-07-03T11:52:08.629489+00:00",
+          "reason": null
+        },
+        {
+          "state": "delivered",
+          "actor": "orchestrator",
+          "ts": "2026-07-03T11:52:08.629498+00:00",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": "REC-005",
+      "version": 1,
+      "source_format": "feed",
+      "source_version_hash": "sha256:1e4c5a914858b3033a26c5ec13bd86393370af26c1d6d0e083e16e1072260428",
+      "status": "delivered",
+      "reason_code": null,
+      "reason_class": null,
+      "transcript_hash": "sha256:432780ebe7a1899aae474bc4b1c439111be92c977f55b66fdd95488c2ab2e54d",
+      "delivered_fields": {
+        "id": "REC-005",
+        "owner": "e.moreau",
+        "category": "INTAKE",
+        "amount": 4500.0,
+        "deadline": "2026-07-28",
+        "branded_summary": "CEDX work item REC-005 (INTAKE) for e.moreau, amount 4500.0."
+      },
+      "delivered_fields_hash": "sha256:432780ebe7a1899aae474bc4b1c439111be92c977f55b66fdd95488c2ab2e54d",
+      "agent_trace": [
+        {
+          "agent": "worker",
+          "model": "gpt-4o-mini",
+          "prompt_version": "worker-v1",
+          "tokens_in": 146,
+          "tokens_out": 60,
+          "cost_usd": 3.1e-05,
+          "latency_ms": 0.0,
+          "retries": 0,
+          "transcript_hash": "sha256:432780ebe7a1899aae474bc4b1c439111be92c977f55b66fdd95488c2ab2e54d",
+          "status": "ok"
+        },
+        {
+          "agent": "verifier",
+          "status": "ok",
+          "verdict": "pass",
+          "cost_usd": 0.0,
+          "latency_ms": 0.0,
+          "retries": 0
+        }
+      ],
+      "approval_trail": [
+        {
+          "state": "draft",
+          "actor": "orchestrator",
+          "ts": "2026-07-03T11:52:08.629595+00:00",
+          "reason": null
+        },
+        {
+          "state": "in_review",
+          "actor": "orchestrator",
+          "ts": "2026-07-03T11:52:08.629600+00:00",
+          "reason": null
+        },
+        {
+          "state": "approved",
+          "actor": "operator:reviewer",
+          "ts": "2026-07-03T11:52:08.629815+00:00",
+          "reason": null
+        },
+        {
+          "state": "delivered",
+          "actor": "orchestrator",
+          "ts": "2026-07-03T11:52:08.629825+00:00",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": "REC-008",
+      "version": 1,
+      "source_format": "feed",
+      "source_version_hash": "sha256:d10b38572a1773dc372c9594ca3ad333e99431fde419886d6361f1489cd6441a",
+      "status": "delivered",
+      "reason_code": null,
+      "reason_class": null,
+      "transcript_hash": "sha256:89d9f085c51ad0bb89e46e37255dba1c9f5d93d1496111b5f8e14a72fd138c24",
+      "delivered_fields": {
+        "id": "REC-008",
+        "owner": "h.iqbal",
+        "category": "REPORT",
+        "amount": 5000.0,
+        "deadline": "2026-08-05",
+        "branded_summary": "CEDX work item REC-008 (REPORT) for h.iqbal, amount 5000.0."
+      },
+      "delivered_fields_hash": "sha256:89d9f085c51ad0bb89e46e37255dba1c9f5d93d1496111b5f8e14a72fd138c24",
+      "agent_trace": [
+        {
+          "agent": "worker",
+          "model": "gpt-4o-mini",
+          "prompt_version": "worker-v1",
+          "tokens_in": 135,
+          "tokens_out": 60,
+          "cost_usd": 2.9e-05,
+          "latency_ms": 0.0,
+          "retries": 0,
+          "transcript_hash": "sha256:89d9f085c51ad0bb89e46e37255dba1c9f5d93d1496111b5f8e14a72fd138c24",
+          "status": "ok"
+        },
+        {
+          "agent": "verifier",
+          "status": "ok",
+          "verdict": "pass",
+          "cost_usd": 0.0,
+          "latency_ms": 0.0,
+          "retries": 0
+        }
+      ],
+      "approval_trail": [
+        {
+          "state": "draft",
+          "actor": "orchestrator",
+          "ts": "2026-07-03T11:52:08.629916+00:00",
+          "reason": null
+        },
+        {
+          "state": "in_review",
+          "actor": "orchestrator",
+          "ts": "2026-07-03T11:52:08.629921+00:00",
+          "reason": null
+        },
+        {
+          "state": "approved",
+          "actor": "operator:reviewer",
+          "ts": "2026-07-03T11:52:08.630151+00:00",
+          "reason": null
+        },
+        {
+          "state": "delivered",
+          "actor": "orchestrator",
+          "ts": "2026-07-03T11:52:08.630161+00:00",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": "REC-009",
+      "version": 1,
+      "source_format": "feed",
+      "source_version_hash": "sha256:e26952a685f16fa4c0a6daa3a42b5391fc4a2def8cf122175ac7aa47a89f1ea3",
+      "status": "delivered",
+      "reason_code": null,
+      "reason_class": null,
+      "transcript_hash": "sha256:2ae683ec300be00af460393864b57b525193589f12cbe35b164af355ea7d4c48",
+      "delivered_fields": {
+        "id": "REC-009",
+        "owner": "i.rossi",
+        "category": "ONBOARDING",
+        "amount": 4600.0,
+        "deadline": "2026-07-30",
+        "branded_summary": "CEDX work item REC-009 (ONBOARDING) for i.rossi, amount 4600.0."
+      },
+      "delivered_fields_hash": "sha256:2ae683ec300be00af460393864b57b525193589f12cbe35b164af355ea7d4c48",
+      "agent_trace": [
+        {
+          "agent": "worker",
+          "model": "gpt-4o-mini",
+          "prompt_version": "worker-v1",
+          "tokens_in": 153,
+          "tokens_out": 60,
+          "cost_usd": 3.2e-05,
+          "latency_ms": 0.0,
+          "retries": 0,
+          "transcript_hash": "sha256:2ae683ec300be00af460393864b57b525193589f12cbe35b164af355ea7d4c48",
+          "status": "ok"
+        },
+        {
+          "agent": "verifier",
+          "status": "ok",
+          "verdict": "pass",
+          "cost_usd": 0.0,
+          "latency_ms": 0.0,
+          "retries": 0
+        }
+      ],
+      "approval_trail": [
+        {
+          "state": "draft",
+          "actor": "orchestrator",
+          "ts": "2026-07-03T11:52:08.630256+00:00",
+          "reason": null
+        },
+        {
+          "state": "in_review",
+          "actor": "orchestrator",
+          "ts": "2026-07-03T11:52:08.630262+00:00",
+          "reason": null
+        },
+        {
+          "state": "approved",
+          "actor": "operator:reviewer",
+          "ts": "2026-07-03T11:52:08.630518+00:00",
+          "reason": null
+        },
+        {
+          "state": "delivered",
+          "actor": "orchestrator",
+          "ts": "2026-07-03T11:52:08.630527+00:00",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": "REC-011",
+      "version": 1,
+      "source_format": "feed",
+      "source_version_hash": "sha256:fa8b1057b75df41709723ceac63e8809a684f98a6093527b68ea8bdf8e4c1947",
+      "status": "exception",
+      "reason_code": "STALE",
+      "reason_class": "A",
+      "transcript_hash": null,
+      "delivered_fields": null,
+      "delivered_fields_hash": null,
+      "agent_trace": [
+        {
+          "agent": "orchestrator",
+          "status": "routed"
+        }
+      ],
+      "approval_trail": [
+        {
+          "state": "blocked",
+          "actor": "orchestrator",
+          "ts": "2026-07-03T11:52:08.630643+00:00",
+          "reason": "STALE"
+        }
+      ]
+    },
+    {
+      "id": "REC-012",
+      "version": 1,
+      "source_format": "feed",
+      "source_version_hash": "sha256:d1d8a30b2942cf3394965e0c4ba7f18fdd5f1b6efb16c876a839e861fde81900",
+      "status": "exception",
+      "reason_code": "MISSING_INPUT",
+      "reason_class": "A",
+      "transcript_hash": null,
+      "delivered_fields": null,
+      "delivered_fields_hash": null,
+      "agent_trace": [
+        {
+          "agent": "orchestrator",
+          "status": "routed"
+        }
+      ],
+      "approval_trail": [
+        {
+          "state": "blocked",
+          "actor": "orchestrator",
+          "ts": "2026-07-03T11:52:08.630658+00:00",
+          "reason": "MISSING_INPUT"
+        }
+      ]
+    },
+    {
+      "id": "REC-013",
+      "version": 1,
+      "source_format": "feed",
+      "source_version_hash": "sha256:dd798682aba0fee49ddeda62128ca22e8986eef13037eec08fe90d08a568315a",
+      "status": "exception",
+      "reason_code": "OUTLIER",
+      "reason_class": "A",
+      "transcript_hash": null,
+      "delivered_fields": null,
+      "delivered_fields_hash": null,
+      "agent_trace": [
+        {
+          "agent": "orchestrator",
+          "status": "routed"
+        }
+      ],
+      "approval_trail": [
+        {
+          "state": "blocked",
+          "actor": "orchestrator",
+          "ts": "2026-07-03T11:52:08.630671+00:00",
+          "reason": "OUTLIER"
+        }
+      ]
+    },
+    {
+      "id": "REC-017",
+      "version": 2,
+      "source_format": "pdf",
+      "source_version_hash": "sha256:1ec239c71857722bc4f680f30c98925b9cc5206a7a2e55dbf767b783a5eb3b11",
+      "status": "delivered",
+      "reason_code": null,
+      "reason_class": null,
+      "transcript_hash": "sha256:d7cba63d30cd6de091b12be21795c531043d215e682992b58725598aefcc577f",
+      "delivered_fields": {
+        "id": "REC-017",
+        "owner": "q.abate",
+        "category": "REPORT",
+        "amount": 4650.0,
+        "deadline": "2026-07-24",
+        "branded_summary": "CEDX work item REC-017 (REPORT) for q.abate, amount 4650.0."
+      },
+      "delivered_fields_hash": "sha256:d7cba63d30cd6de091b12be21795c531043d215e682992b58725598aefcc577f",
+      "agent_trace": [
+        {
+          "agent": "worker",
+          "model": "gpt-4o-mini",
+          "prompt_version": "worker-v1",
+          "tokens_in": 146,
+          "tokens_out": 60,
+          "cost_usd": 3.1e-05,
+          "latency_ms": 0.0,
+          "retries": 0,
+          "transcript_hash": "sha256:d7cba63d30cd6de091b12be21795c531043d215e682992b58725598aefcc577f",
+          "status": "ok"
+        },
+        {
+          "agent": "verifier",
+          "status": "ok",
+          "verdict": "pass",
+          "cost_usd": 0.0,
+          "latency_ms": 0.0,
+          "retries": 0
+        }
+      ],
+      "approval_trail": [
+        {
+          "state": "draft",
+          "actor": "orchestrator",
+          "ts": "2026-07-03T11:52:08.630676+00:00",
+          "reason": null
+        },
+        {
+          "state": "in_review",
+          "actor": "orchestrator",
+          "ts": "2026-07-03T11:52:08.630678+00:00",
+          "reason": null
+        },
+        {
+          "state": "approved",
+          "actor": "operator:reviewer",
+          "ts": "2026-07-03T11:52:08.630907+00:00",
+          "reason": null
+        },
+        {
+          "state": "delivered",
+          "actor": "orchestrator",
+          "ts": "2026-07-03T11:52:08.630917+00:00",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": "REC-018",
+      "version": 1,
+      "source_format": "feed",
+      "source_version_hash": "sha256:69094891717e6610c0e00ef0864f3cb9d62cf1f155231a02ebb05bf2eaba367e",
+      "status": "delivered",
+      "reason_code": null,
+      "reason_class": null,
+      "transcript_hash": "sha256:300f10c9c85bba4fc12adb15c565dbda55277cc71ceb08bb53e50a7124ee938f",
+      "delivered_fields": {
+        "id": "REC-018",
+        "owner": "r.ferreira",
+        "category": "REVIEW",
+        "amount": 5150.0,
+        "deadline": "2026-08-03",
+        "branded_summary": "CEDX work item REC-018 (REVIEW) for r.ferreira, amount 5150.0."
+      },
+      "delivered_fields_hash": "sha256:300f10c9c85bba4fc12adb15c565dbda55277cc71ceb08bb53e50a7124ee938f",
+      "agent_trace": [
+        {
+          "agent": "worker",
+          "model": "gpt-4o-mini",
+          "prompt_version": "worker-v1",
+          "tokens_in": 135,
+          "tokens_out": 60,
+          "cost_usd": 2.9e-05,
+          "latency_ms": 0.0,
+          "retries": 0,
+          "transcript_hash": "sha256:300f10c9c85bba4fc12adb15c565dbda55277cc71ceb08bb53e50a7124ee938f",
+          "status": "ok"
+        },
+        {
+          "agent": "verifier",
+          "status": "ok",
+          "verdict": "pass",
+          "cost_usd": 0.0,
+          "latency_ms": 0.0,
+          "retries": 0
+        }
+      ],
+      "approval_trail": [
+        {
+          "state": "draft",
+          "actor": "orchestrator",
+          "ts": "2026-07-03T11:52:08.631008+00:00",
+          "reason": null
+        },
+        {
+          "state": "in_review",
+          "actor": "orchestrator",
+          "ts": "2026-07-03T11:52:08.631013+00:00",
+          "reason": null
+        },
+        {
+          "state": "approved",
+          "actor": "operator:reviewer",
+          "ts": "2026-07-03T11:52:08.631544+00:00",
+          "reason": null
+        },
+        {
+          "state": "delivered",
+          "actor": "orchestrator",
+          "ts": "2026-07-03T11:52:08.631556+00:00",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": "REC-019",
+      "version": 1,
+      "source_format": "feed",
+      "source_version_hash": "sha256:25aacdd95bd4c24ba7603c38557c63eeb1c929cd5ef54d9ef44b9a95c660244a",
+      "status": "delivered",
+      "reason_code": null,
+      "reason_class": null,
+      "transcript_hash": "sha256:f87bebac4c996b61e147f77f3dad8d1a812a97ab5e0afc27a4e2443e6981b599",
+      "delivered_fields": {
+        "id": "REC-019",
+        "owner": "s.haque",
+        "category": "ONBOARDING",
+        "amount": 4850.0,
+        "deadline": "2026-07-27",
+        "branded_summary": "CEDX work item REC-019 (ONBOARDING) for s.haque, amount 4850.0."
+      },
+      "delivered_fields_hash": "sha256:f87bebac4c996b61e147f77f3dad8d1a812a97ab5e0afc27a4e2443e6981b599",
+      "agent_trace": [
+        {
+          "agent": "worker",
+          "model": "gpt-4o-mini",
+          "prompt_version": "worker-v1",
+          "tokens_in": 145,
+          "tokens_out": 60,
+          "cost_usd": 3.1e-05,
+          "latency_ms": 0.0,
+          "retries": 0,
+          "transcript_hash": "sha256:f87bebac4c996b61e147f77f3dad8d1a812a97ab5e0afc27a4e2443e6981b599",
+          "status": "ok"
+        },
+        {
+          "agent": "verifier",
+          "status": "ok",
+          "verdict": "pass",
+          "cost_usd": 0.0,
+          "latency_ms": 0.0,
+          "retries": 0
+        }
+      ],
+      "approval_trail": [
+        {
+          "state": "draft",
+          "actor": "orchestrator",
+          "ts": "2026-07-03T11:52:08.631664+00:00",
+          "reason": null
+        },
+        {
+          "state": "in_review",
+          "actor": "orchestrator",
+          "ts": "2026-07-03T11:52:08.631670+00:00",
+          "reason": null
+        },
+        {
+          "state": "approved",
+          "actor": "operator:reviewer",
+          "ts": "2026-07-03T11:52:08.631970+00:00",
+          "reason": null
+        },
+        {
+          "state": "delivered",
+          "actor": "orchestrator",
+          "ts": "2026-07-03T11:52:08.631980+00:00",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": "REC-020",
+      "version": 1,
+      "source_format": "feed",
+      "source_version_hash": "sha256:e7f12adb6bd5b10171e66720f388c7e5c62ac54d47766ae6115bd966b695b7e6",
+      "status": "delivered",
+      "reason_code": null,
+      "reason_class": null,
+      "transcript_hash": "sha256:0a659cdd82e88e6cb50ea8b43664415f54be43f847be9b302f108ce6ed3443a8",
+      "delivered_fields": {
+        "id": "REC-020",
+        "owner": "t.novak",
+        "category": "REPORT",
+        "amount": 5250.0,
+        "deadline": "2026-08-02",
+        "branded_summary": "CEDX work item REC-020 (REPORT) for t.novak, amount 5250.0."
+      },
+      "delivered_fields_hash": "sha256:0a659cdd82e88e6cb50ea8b43664415f54be43f847be9b302f108ce6ed3443a8",
+      "agent_trace": [
+        {
+          "agent": "worker",
+          "model": "gpt-4o-mini",
+          "prompt_version": "worker-v1",
+          "tokens_in": 136,
+          "tokens_out": 60,
+          "cost_usd": 2.9e-05,
+          "latency_ms": 0.0,
+          "retries": 0,
+          "transcript_hash": "sha256:0a659cdd82e88e6cb50ea8b43664415f54be43f847be9b302f108ce6ed3443a8",
+          "status": "ok"
+        },
+        {
+          "agent": "verifier",
+          "status": "ok",
+          "verdict": "pass",
+          "cost_usd": 0.0,
+          "latency_ms": 0.0,
+          "retries": 0
+        }
+      ],
+      "approval_trail": [
+        {
+          "state": "draft",
+          "actor": "orchestrator",
+          "ts": "2026-07-03T11:52:08.632076+00:00",
+          "reason": null
+        },
+        {
+          "state": "in_review",
+          "actor": "orchestrator",
+          "ts": "2026-07-03T11:52:08.632082+00:00",
+          "reason": null
+        },
+        {
+          "state": "approved",
+          "actor": "operator:reviewer",
+          "ts": "2026-07-03T11:52:08.632327+00:00",
+          "reason": null
+        },
+        {
+          "state": "delivered",
+          "actor": "orchestrator",
+          "ts": "2026-07-03T11:52:08.632336+00:00",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": "REC-021",
+      "version": 1,
+      "source_format": "feed",
+      "source_version_hash": "sha256:5b9473b193b9af98c56a6ad93f8cb017899ab776ebd5334f63f6bf7f0fd20389",
+      "status": "exception",
+      "reason_code": "LOW_CONFIDENCE",
+      "reason_class": "A",
+      "transcript_hash": null,
+      "delivered_fields": null,
+      "delivered_fields_hash": null,
+      "agent_trace": [
+        {
+          "agent": "orchestrator",
+          "status": "routed"
+        }
+      ],
+      "approval_trail": [
+        {
+          "state": "blocked",
+          "actor": "orchestrator",
+          "ts": "2026-07-03T11:52:08.632444+00:00",
+          "reason": "LOW_CONFIDENCE"
+        }
+      ]
+    },
+    {
+      "id": "REC-022",
+      "version": 1,
+      "source_format": "feed",
+      "source_version_hash": "sha256:20277ec07ce011588d43ffad20fa80acbdabd0f18d20627cd406d0123651f330",
+      "status": "exception",
+      "reason_code": "INJECTION_BLOCKED",
+      "reason_class": "A",
+      "transcript_hash": null,
+      "delivered_fields": null,
+      "delivered_fields_hash": null,
+      "agent_trace": [
+        {
+          "agent": "orchestrator",
+          "status": "routed"
+        }
+      ],
+      "approval_trail": [
+        {
+          "state": "blocked",
+          "actor": "orchestrator",
+          "ts": "2026-07-03T11:52:08.632458+00:00",
+          "reason": "INJECTION_BLOCKED"
+        }
+      ]
+    },
+    {
+      "id": "REC-006",
+      "version": 1,
+      "source_format": "eml",
+      "source_version_hash": "sha256:546cf7b76e36228f145171a06920a008c822eff337912da2d65116a6ba487bc6",
+      "status": "delivered",
+      "reason_code": null,
+      "reason_class": null,
+      "transcript_hash": "sha256:0d142c25c8b5084ba067dc86a3a1e6f01b7efe457f285e22118c41698a34fef8",
+      "delivered_fields": {
+        "id": "REC-006",
+        "owner": "f.haddad",
+        "category": "RENEWAL",
+        "amount": 5300.0,
+        "deadline": "2026-07-18",
+        "branded_summary": "CEDX work item REC-006 (RENEWAL) for f.haddad, amount 5300.0."
+      },
+      "delivered_fields_hash": "sha256:0d142c25c8b5084ba067dc86a3a1e6f01b7efe457f285e22118c41698a34fef8",
+      "agent_trace": [
+        {
+          "agent": "worker",
+          "model": "gpt-4o-mini",
+          "prompt_version": "worker-v1",
+          "tokens_in": 150,
+          "tokens_out": 60,
+          "cost_usd": 3.1e-05,
+          "latency_ms": 0.0,
+          "retries": 0,
+          "transcript_hash": "sha256:0d142c25c8b5084ba067dc86a3a1e6f01b7efe457f285e22118c41698a34fef8",
+          "status": "ok"
+        },
+        {
+          "agent": "verifier",
+          "status": "ok",
+          "verdict": "pass",
+          "cost_usd": 0.0,
+          "latency_ms": 0.0,
+          "retries": 0
+        }
+      ],
+      "approval_trail": [
+        {
+          "state": "draft",
+          "actor": "orchestrator",
+          "ts": "2026-07-03T11:52:08.632463+00:00",
+          "reason": null
+        },
+        {
+          "state": "in_review",
+          "actor": "orchestrator",
+          "ts": "2026-07-03T11:52:08.632466+00:00",
+          "reason": null
+        },
+        {
+          "state": "approved",
+          "actor": "operator:reviewer",
+          "ts": "2026-07-03T11:52:08.634320+00:00",
+          "reason": null
+        },
+        {
+          "state": "delivered",
+          "actor": "orchestrator",
+          "ts": "2026-07-03T11:52:08.634334+00:00",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": "REC-014",
+      "version": 1,
+      "source_format": "eml",
+      "source_version_hash": "sha256:0099c2a429fcb0acc999aec53c6decf7f7f5b80e13fd3d565d76dea31e3cbf81",
+      "status": "exception",
+      "reason_code": "INJECTION_BLOCKED",
+      "reason_class": "A",
+      "transcript_hash": null,
+      "delivered_fields": null,
+      "delivered_fields_hash": null,
+      "agent_trace": [
+        {
+          "agent": "orchestrator",
+          "status": "routed"
+        }
+      ],
+      "approval_trail": [
+        {
+          "state": "blocked",
+          "actor": "orchestrator",
+          "ts": "2026-07-03T11:52:08.634482+00:00",
+          "reason": "INJECTION_BLOCKED"
+        }
+      ]
+    },
+    {
+      "id": "REC-016",
+      "version": 1,
+      "source_format": "eml",
+      "source_version_hash": "sha256:4c8a4a13bc237e6a174ab0f1f81489c4f200ae036464f70a02a366ec2d9637c3",
+      "status": "delivered",
+      "reason_code": "SCHEMA_DRIFT",
+      "reason_class": "B",
+      "transcript_hash": "sha256:b4e201f2d263bd3daf4f19282430469e11d6423d79cabc94ee5088c2b0dc9ed1",
+      "delivered_fields": {
+        "id": "REC-016",
+        "owner": "p.larsen",
+        "category": "RENEWAL",
+        "amount": 4750.0,
+        "deadline": "2026-07-23",
+        "branded_summary": "CEDX work item REC-016 (RENEWAL) for p.larsen, amount 4750.0."
+      },
+      "delivered_fields_hash": "sha256:b4e201f2d263bd3daf4f19282430469e11d6423d79cabc94ee5088c2b0dc9ed1",
+      "agent_trace": [
+        {
+          "agent": "worker",
+          "model": "gpt-4o-mini",
+          "prompt_version": "worker-v1",
+          "tokens_in": 145,
+          "tokens_out": 60,
+          "cost_usd": 3.1e-05,
+          "latency_ms": 0.0,
+          "retries": 0,
+          "transcript_hash": "sha256:b4e201f2d263bd3daf4f19282430469e11d6423d79cabc94ee5088c2b0dc9ed1",
+          "status": "ok"
+        },
+        {
+          "agent": "verifier",
+          "status": "ok",
+          "verdict": "pass",
+          "cost_usd": 0.0,
+          "latency_ms": 0.0,
+          "retries": 0
+        }
+      ],
+      "approval_trail": [
+        {
+          "state": "draft",
+          "actor": "orchestrator",
+          "ts": "2026-07-03T11:52:08.634488+00:00",
+          "reason": null
+        },
+        {
+          "state": "in_review",
+          "actor": "orchestrator",
+          "ts": "2026-07-03T11:52:08.634491+00:00",
+          "reason": null
+        },
+        {
+          "state": "approved",
+          "actor": "operator:reviewer",
+          "ts": "2026-07-03T11:52:08.634739+00:00",
+          "reason": null
+        },
+        {
+          "state": "delivered",
+          "actor": "orchestrator",
+          "ts": "2026-07-03T11:52:08.634748+00:00",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": "REC-007",
+      "version": 1,
+      "source_format": "pdf",
+      "source_version_hash": "sha256:ce65b4264f0f806ab2700b77691a05c08543f1d1ca37ef410b709276f252601c",
+      "status": "delivered",
+      "reason_code": null,
+      "reason_class": null,
+      "transcript_hash": "sha256:d3f710784d07d169a19ded540485b29b307f05af4889d6011dc9890dbbb14c5b",
+      "delivered_fields": {
+        "id": "REC-007",
+        "owner": "g.silva",
+        "category": "REVIEW",
+        "amount": 4700.0,
+        "deadline": "2026-07-22",
+        "branded_summary": "CEDX work item REC-007 (REVIEW) for g.silva, amount 4700.0."
+      },
+      "delivered_fields_hash": "sha256:d3f710784d07d169a19ded540485b29b307f05af4889d6011dc9890dbbb14c5b",
+      "agent_trace": [
+        {
+          "agent": "worker",
+          "model": "gpt-4o-mini",
+          "prompt_version": "worker-v1",
+          "tokens_in": 156,
+          "tokens_out": 60,
+          "cost_usd": 3.2e-05,
+          "latency_ms": 0.0,
+          "retries": 0,
+          "transcript_hash": "sha256:d3f710784d07d169a19ded540485b29b307f05af4889d6011dc9890dbbb14c5b",
+          "status": "ok"
+        },
+        {
+          "agent": "verifier",
+          "status": "ok",
+          "verdict": "pass",
+          "cost_usd": 0.0,
+          "latency_ms": 0.0,
+          "retries": 0
+        }
+      ],
+      "approval_trail": [
+        {
+          "state": "draft",
+          "actor": "orchestrator",
+          "ts": "2026-07-03T11:52:08.634868+00:00",
+          "reason": null
+        },
+        {
+          "state": "in_review",
+          "actor": "orchestrator",
+          "ts": "2026-07-03T11:52:08.634874+00:00",
+          "reason": null
+        },
+        {
+          "state": "approved",
+          "actor": "operator:reviewer",
+          "ts": "2026-07-03T11:52:08.635081+00:00",
+          "reason": null
+        },
+        {
+          "state": "delivered",
+          "actor": "orchestrator",
+          "ts": "2026-07-03T11:52:08.635089+00:00",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": "REC-010",
+      "version": 1,
+      "source_format": "pdf",
+      "source_version_hash": "sha256:e10054a5a4b7e05f2d04e1dc440b5da208946b1f5795f0c786a2c0e95ef0c18a",
+      "status": "delivered",
+      "reason_code": null,
+      "reason_class": null,
+      "transcript_hash": "sha256:4c5b437c07b40899808dc2ee9ca8198c1330f0e65708710eb496eedf068dbf50",
+      "delivered_fields": {
+        "id": "REC-010",
+        "owner": "j.cohen",
+        "category": "INTAKE",
+        "amount": 5100.0,
+        "deadline": "2026-07-25",
+        "branded_summary": "CEDX work item REC-010 (INTAKE) for j.cohen, amount 5100.0."
+      },
+      "delivered_fields_hash": "sha256:4c5b437c07b40899808dc2ee9ca8198c1330f0e65708710eb496eedf068dbf50",
+      "agent_trace": [
+        {
+          "agent": "worker",
+          "model": "gpt-4o-mini",
+          "prompt_version": "worker-v1",
+          "tokens_in": 136,
+          "tokens_out": 60,
+          "cost_usd": 2.9e-05,
+          "latency_ms": 0.0,
+          "retries": 0,
+          "transcript_hash": "sha256:4c5b437c07b40899808dc2ee9ca8198c1330f0e65708710eb496eedf068dbf50",
+          "status": "ok"
+        },
+        {
+          "agent": "verifier",
+          "status": "ok",
+          "verdict": "pass",
+          "cost_usd": 0.0,
+          "latency_ms": 0.0,
+          "retries": 0
+        }
+      ],
+      "approval_trail": [
+        {
+          "state": "draft",
+          "actor": "orchestrator",
+          "ts": "2026-07-03T11:52:08.635175+00:00",
+          "reason": null
+        },
+        {
+          "state": "in_review",
+          "actor": "orchestrator",
+          "ts": "2026-07-03T11:52:08.635180+00:00",
+          "reason": null
+        },
+        {
+          "state": "approved",
+          "actor": "operator:reviewer",
+          "ts": "2026-07-03T11:52:08.635392+00:00",
+          "reason": null
+        },
+        {
+          "state": "delivered",
+          "actor": "orchestrator",
+          "ts": "2026-07-03T11:52:08.635400+00:00",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": "REC-015",
+      "version": 1,
+      "source_format": "pdf",
+      "source_version_hash": "sha256:9aed84ee761014cdd5b5eeb68682e85d28677affffd44d3de81b18c9e0c58472",
+      "status": "exception",
+      "reason_code": "LOW_CONFIDENCE",
+      "reason_class": "A",
+      "transcript_hash": null,
+      "delivered_fields": null,
+      "delivered_fields_hash": null,
+      "agent_trace": [
+        {
+          "agent": "orchestrator",
+          "status": "routed"
+        }
+      ],
+      "approval_trail": [
+        {
+          "state": "blocked",
+          "actor": "orchestrator",
+          "ts": "2026-07-03T11:52:08.635501+00:00",
+          "reason": "LOW_CONFIDENCE"
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "seq": 0,
+      "ts": "2026-07-03T11:52:08.627359+00:00",
+      "actor": "orchestrator",
+      "action": "run_start",
+      "record_id": null
+    },
+    {
+      "seq": 1,
+      "ts": "2026-07-03T11:52:08.628140+00:00",
+      "actor": "verifier",
+      "action": "verdict:pass:REC-001",
+      "record_id": "REC-001"
+    },
+    {
+      "seq": 2,
+      "ts": "2026-07-03T11:52:08.628158+00:00",
+      "actor": "operator",
+      "action": "approved",
+      "record_id": "REC-001"
+    },
+    {
+      "seq": 3,
+      "ts": "2026-07-03T11:52:08.628170+00:00",
+      "actor": "orchestrator",
+      "action": "delivered",
+      "record_id": "REC-001"
+    },
+    {
+      "seq": 4,
+      "ts": "2026-07-03T11:52:08.628574+00:00",
+      "actor": "verifier",
+      "action": "verdict:pass:REC-002",
+      "record_id": "REC-002"
+    },
+    {
+      "seq": 5,
+      "ts": "2026-07-03T11:52:08.628587+00:00",
+      "actor": "operator",
+      "action": "approved",
+      "record_id": "REC-002"
+    },
+    {
+      "seq": 6,
+      "ts": "2026-07-03T11:52:08.628598+00:00",
+      "actor": "orchestrator",
+      "action": "delivered",
+      "record_id": "REC-002"
+    },
+    {
+      "seq": 7,
+      "ts": "2026-07-03T11:52:08.628909+00:00",
+      "actor": "verifier",
+      "action": "verdict:pass:REC-003",
+      "record_id": "REC-003"
+    },
+    {
+      "seq": 8,
+      "ts": "2026-07-03T11:52:08.628921+00:00",
+      "actor": "operator",
+      "action": "approved",
+      "record_id": "REC-003"
+    },
+    {
+      "seq": 9,
+      "ts": "2026-07-03T11:52:08.628931+00:00",
+      "actor": "orchestrator",
+      "action": "delivered",
+      "record_id": "REC-003"
+    },
+    {
+      "seq": 10,
+      "ts": "2026-07-03T11:52:08.629481+00:00",
+      "actor": "verifier",
+      "action": "verdict:pass:REC-004",
+      "record_id": "REC-004"
+    },
+    {
+      "seq": 11,
+      "ts": "2026-07-03T11:52:08.629493+00:00",
+      "actor": "operator",
+      "action": "approved",
+      "record_id": "REC-004"
+    },
+    {
+      "seq": 12,
+      "ts": "2026-07-03T11:52:08.629502+00:00",
+      "actor": "orchestrator",
+      "action": "delivered",
+      "record_id": "REC-004"
+    },
+    {
+      "seq": 13,
+      "ts": "2026-07-03T11:52:08.629808+00:00",
+      "actor": "verifier",
+      "action": "verdict:pass:REC-005",
+      "record_id": "REC-005"
+    },
+    {
+      "seq": 14,
+      "ts": "2026-07-03T11:52:08.629820+00:00",
+      "actor": "operator",
+      "action": "approved",
+      "record_id": "REC-005"
+    },
+    {
+      "seq": 15,
+      "ts": "2026-07-03T11:52:08.629828+00:00",
+      "actor": "orchestrator",
+      "action": "delivered",
+      "record_id": "REC-005"
+    },
+    {
+      "seq": 16,
+      "ts": "2026-07-03T11:52:08.630144+00:00",
+      "actor": "verifier",
+      "action": "verdict:pass:REC-008",
+      "record_id": "REC-008"
+    },
+    {
+      "seq": 17,
+      "ts": "2026-07-03T11:52:08.630155+00:00",
+      "actor": "operator",
+      "action": "approved",
+      "record_id": "REC-008"
+    },
+    {
+      "seq": 18,
+      "ts": "2026-07-03T11:52:08.630164+00:00",
+      "actor": "orchestrator",
+      "action": "delivered",
+      "record_id": "REC-008"
+    },
+    {
+      "seq": 19,
+      "ts": "2026-07-03T11:52:08.630510+00:00",
+      "actor": "verifier",
+      "action": "verdict:pass:REC-009",
+      "record_id": "REC-009"
+    },
+    {
+      "seq": 20,
+      "ts": "2026-07-03T11:52:08.630522+00:00",
+      "actor": "operator",
+      "action": "approved",
+      "record_id": "REC-009"
+    },
+    {
+      "seq": 21,
+      "ts": "2026-07-03T11:52:08.630530+00:00",
+      "actor": "orchestrator",
+      "action": "delivered",
+      "record_id": "REC-009"
+    },
+    {
+      "seq": 22,
+      "ts": "2026-07-03T11:52:08.630636+00:00",
+      "actor": "orchestrator",
+      "action": "exception:STALE",
+      "record_id": "REC-011"
+    },
+    {
+      "seq": 23,
+      "ts": "2026-07-03T11:52:08.630654+00:00",
+      "actor": "orchestrator",
+      "action": "exception:MISSING_INPUT",
+      "record_id": "REC-012"
+    },
+    {
+      "seq": 24,
+      "ts": "2026-07-03T11:52:08.630667+00:00",
+      "actor": "orchestrator",
+      "action": "exception:OUTLIER",
+      "record_id": "REC-013"
+    },
+    {
+      "seq": 25,
+      "ts": "2026-07-03T11:52:08.630899+00:00",
+      "actor": "verifier",
+      "action": "verdict:pass:REC-017",
+      "record_id": "REC-017"
+    },
+    {
+      "seq": 26,
+      "ts": "2026-07-03T11:52:08.630911+00:00",
+      "actor": "operator",
+      "action": "approved",
+      "record_id": "REC-017"
+    },
+    {
+      "seq": 27,
+      "ts": "2026-07-03T11:52:08.630922+00:00",
+      "actor": "orchestrator",
+      "action": "delivered",
+      "record_id": "REC-017"
+    },
+    {
+      "seq": 28,
+      "ts": "2026-07-03T11:52:08.631533+00:00",
+      "actor": "verifier",
+      "action": "verdict:pass:REC-018",
+      "record_id": "REC-018"
+    },
+    {
+      "seq": 29,
+      "ts": "2026-07-03T11:52:08.631550+00:00",
+      "actor": "operator",
+      "action": "approved",
+      "record_id": "REC-018"
+    },
+    {
+      "seq": 30,
+      "ts": "2026-07-03T11:52:08.631561+00:00",
+      "actor": "orchestrator",
+      "action": "delivered",
+      "record_id": "REC-018"
+    },
+    {
+      "seq": 31,
+      "ts": "2026-07-03T11:52:08.631962+00:00",
+      "actor": "verifier",
+      "action": "verdict:pass:REC-019",
+      "record_id": "REC-019"
+    },
+    {
+      "seq": 32,
+      "ts": "2026-07-03T11:52:08.631974+00:00",
+      "actor": "operator",
+      "action": "approved",
+      "record_id": "REC-019"
+    },
+    {
+      "seq": 33,
+      "ts": "2026-07-03T11:52:08.631984+00:00",
+      "actor": "orchestrator",
+      "action": "delivered",
+      "record_id": "REC-019"
+    },
+    {
+      "seq": 34,
+      "ts": "2026-07-03T11:52:08.632320+00:00",
+      "actor": "verifier",
+      "action": "verdict:pass:REC-020",
+      "record_id": "REC-020"
+    },
+    {
+      "seq": 35,
+      "ts": "2026-07-03T11:52:08.632331+00:00",
+      "actor": "operator",
+      "action": "approved",
+      "record_id": "REC-020"
+    },
+    {
+      "seq": 36,
+      "ts": "2026-07-03T11:52:08.632340+00:00",
+      "actor": "orchestrator",
+      "action": "delivered",
+      "record_id": "REC-020"
+    },
+    {
+      "seq": 37,
+      "ts": "2026-07-03T11:52:08.632438+00:00",
+      "actor": "orchestrator",
+      "action": "exception:LOW_CONFIDENCE",
+      "record_id": "REC-021"
+    },
+    {
+      "seq": 38,
+      "ts": "2026-07-03T11:52:08.632454+00:00",
+      "actor": "orchestrator",
+      "action": "exception:INJECTION_BLOCKED",
+      "record_id": "REC-022"
+    },
+    {
+      "seq": 39,
+      "ts": "2026-07-03T11:52:08.634304+00:00",
+      "actor": "verifier",
+      "action": "verdict:pass:REC-006",
+      "record_id": "REC-006"
+    },
+    {
+      "seq": 40,
+      "ts": "2026-07-03T11:52:08.634326+00:00",
+      "actor": "operator",
+      "action": "approved",
+      "record_id": "REC-006"
+    },
+    {
+      "seq": 41,
+      "ts": "2026-07-03T11:52:08.634338+00:00",
+      "actor": "orchestrator",
+      "action": "delivered",
+      "record_id": "REC-006"
+    },
+    {
+      "seq": 42,
+      "ts": "2026-07-03T11:52:08.634475+00:00",
+      "actor": "orchestrator",
+      "action": "exception:INJECTION_BLOCKED",
+      "record_id": "REC-014"
+    },
+    {
+      "seq": 43,
+      "ts": "2026-07-03T11:52:08.634732+00:00",
+      "actor": "verifier",
+      "action": "verdict:pass:REC-016",
+      "record_id": "REC-016"
+    },
+    {
+      "seq": 44,
+      "ts": "2026-07-03T11:52:08.634743+00:00",
+      "actor": "operator",
+      "action": "approved",
+      "record_id": "REC-016"
+    },
+    {
+      "seq": 45,
+      "ts": "2026-07-03T11:52:08.634752+00:00",
+      "actor": "orchestrator",
+      "action": "delivered",
+      "record_id": "REC-016"
+    },
+    {
+      "seq": 46,
+      "ts": "2026-07-03T11:52:08.635074+00:00",
+      "actor": "verifier",
+      "action": "verdict:pass:REC-007",
+      "record_id": "REC-007"
+    },
+    {
+      "seq": 47,
+      "ts": "2026-07-03T11:52:08.635084+00:00",
+      "actor": "operator",
+      "action": "approved",
+      "record_id": "REC-007"
+    },
+    {
+      "seq": 48,
+      "ts": "2026-07-03T11:52:08.635093+00:00",
+      "actor": "orchestrator",
+      "action": "delivered",
+      "record_id": "REC-007"
+    },
+    {
+      "seq": 49,
+      "ts": "2026-07-03T11:52:08.635385+00:00",
+      "actor": "verifier",
+      "action": "verdict:pass:REC-010",
+      "record_id": "REC-010"
+    },
+    {
+      "seq": 50,
+      "ts": "2026-07-03T11:52:08.635396+00:00",
+      "actor": "operator",
+      "action": "approved",
+      "record_id": "REC-010"
+    },
+    {
+      "seq": 51,
+      "ts": "2026-07-03T11:52:08.635404+00:00",
+      "actor": "orchestrator",
+      "action": "delivered",
+      "record_id": "REC-010"
+    },
+    {
+      "seq": 52,
+      "ts": "2026-07-03T11:52:08.635495+00:00",
+      "actor": "orchestrator",
+      "action": "exception:LOW_CONFIDENCE",
+      "record_id": "REC-015"
+    },
+    {
+      "seq": 53,
+      "ts": "2026-07-03T11:52:08.635508+00:00",
+      "actor": "orchestrator",
+      "action": "run_end",
+      "record_id": null
+    }
+  ]
+}

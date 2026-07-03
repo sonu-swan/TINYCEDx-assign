@@ -1,0 +1,21 @@
+{
+  "agent": "worker",
+  "model": "gpt-4o-mini",
+  "prompt_version": "worker-v1",
+  "request": {
+    "record_id": "REC-016",
+    "prompt_version": "worker-v1",
+    "source_hash": "sha256:4c8a4a13bc237e6a174ab0f1f81489c4f200ae036464f70a02a366ec2d9637c3",
+    "is_retry": false
+  },
+  "response": {
+    "id": "REC-016",
+    "owner": "p.larsen",
+    "category": "RENEWAL",
+    "amount": 4750.0,
+    "deadline": "2026-07-23",
+    "branded_summary": "CEDX work item REC-016 (RENEWAL) for p.larsen, amount 4750.0."
+  },
+  "response_hash": "sha256:b4e201f2d263bd3daf4f19282430469e11d6423d79cabc94ee5088c2b0dc9ed1",
+  "delivered_fields_hash": "sha256:b4e201f2d263bd3daf4f19282430469e11d6423d79cabc94ee5088c2b0dc9ed1"
+}

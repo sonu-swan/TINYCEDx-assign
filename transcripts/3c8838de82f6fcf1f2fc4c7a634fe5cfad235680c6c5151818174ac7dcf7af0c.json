@@ -1,0 +1,21 @@
+{
+  "agent": "worker",
+  "model": "gpt-4o-mini",
+  "prompt_version": "worker-v1",
+  "request": {
+    "record_id": "REC-001",
+    "prompt_version": "worker-v1",
+    "source_hash": "sha256:af4223a54c446439c4e42d8b342e5a40541196b4df1618d801dcfa973c9da5ad",
+    "is_retry": false
+  },
+  "response": {
+    "id": "REC-001",
+    "owner": "a.shah",
+    "category": "ONBOARDING",
+    "amount": 4800.0,
+    "deadline": "2026-07-15",
+    "branded_summary": "CEDX work item REC-001 (ONBOARDING) for a.shah, amount 4800.0."
+  },
+  "response_hash": "sha256:3c8838de82f6fcf1f2fc4c7a634fe5cfad235680c6c5151818174ac7dcf7af0c",
+  "delivered_fields_hash": "sha256:3c8838de82f6fcf1f2fc4c7a634fe5cfad235680c6c5151818174ac7dcf7af0c"
+}

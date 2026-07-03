@@ -1,0 +1,21 @@
+{
+  "agent": "worker",
+  "model": "gpt-4o-mini",
+  "prompt_version": "worker-v1",
+  "request": {
+    "record_id": "REC-007",
+    "prompt_version": "worker-v1",
+    "source_hash": "sha256:ce65b4264f0f806ab2700b77691a05c08543f1d1ca37ef410b709276f252601c",
+    "is_retry": false
+  },
+  "response": {
+    "id": "REC-007",
+    "owner": "g.silva",
+    "category": "REVIEW",
+    "amount": 4700.0,
+    "deadline": "2026-07-22",
+    "branded_summary": "CEDX work item REC-007 (REVIEW) for g.silva, amount 4700.0."
+  },
+  "response_hash": "sha256:d3f710784d07d169a19ded540485b29b307f05af4889d6011dc9890dbbb14c5b",
+  "delivered_fields_hash": "sha256:d3f710784d07d169a19ded540485b29b307f05af4889d6011dc9890dbbb14c5b"
+}

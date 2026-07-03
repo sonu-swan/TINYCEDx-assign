@@ -1,0 +1,21 @@
+{
+  "agent": "worker",
+  "model": "gpt-4o-mini",
+  "prompt_version": "worker-v1",
+  "request": {
+    "record_id": "REC-005",
+    "prompt_version": "worker-v1",
+    "source_hash": "sha256:1e4c5a914858b3033a26c5ec13bd86393370af26c1d6d0e083e16e1072260428",
+    "is_retry": false
+  },
+  "response": {
+    "id": "REC-005",
+    "owner": "e.moreau",
+    "category": "INTAKE",
+    "amount": 4500.0,
+    "deadline": "2026-07-28",
+    "branded_summary": "CEDX work item REC-005 (INTAKE) for e.moreau, amount 4500.0."
+  },
+  "response_hash": "sha256:432780ebe7a1899aae474bc4b1c439111be92c977f55b66fdd95488c2ab2e54d",
+  "delivered_fields_hash": "sha256:432780ebe7a1899aae474bc4b1c439111be92c977f55b66fdd95488c2ab2e54d"
+}

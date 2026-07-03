@@ -1,0 +1,125 @@
+{
+  "case_id": "CEDX-XXXX",
+  "items": [
+    {
+      "amount": 4800.0,
+      "branded_summary": "CEDX work item REC-001 (ONBOARDING) for a.shah, amount 4800.0.",
+      "category": "ONBOARDING",
+      "deadline": "2026-07-15",
+      "id": "REC-001",
+      "owner": "a.shah"
+    },
+    {
+      "amount": 5200.0,
+      "branded_summary": "CEDX work item REC-002 (RENEWAL) for b.ortiz, amount 5200.0.",
+      "category": "RENEWAL",
+      "deadline": "2026-07-20",
+      "id": "REC-002",
+      "owner": "b.ortiz"
+    },
+    {
+      "amount": 3900.0,
+      "branded_summary": "CEDX work item REC-003 (REVIEW) for c.nguyen, amount 3900.0.",
+      "category": "REVIEW",
+      "deadline": "2026-07-10",
+      "id": "REC-003",
+      "owner": "c.nguyen"
+    },
+    {
+      "amount": 6100.0,
+      "branded_summary": "CEDX work item REC-004 (REPORT) for d.kapoor, amount 6100.0.",
+      "category": "REPORT",
+      "deadline": "2026-08-01",
+      "id": "REC-004",
+      "owner": "d.kapoor"
+    },
+    {
+      "amount": 4500.0,
+      "branded_summary": "CEDX work item REC-005 (INTAKE) for e.moreau, amount 4500.0.",
+      "category": "INTAKE",
+      "deadline": "2026-07-28",
+      "id": "REC-005",
+      "owner": "e.moreau"
+    },
+    {
+      "amount": 5000.0,
+      "branded_summary": "CEDX work item REC-008 (REPORT) for h.iqbal, amount 5000.0.",
+      "category": "REPORT",
+      "deadline": "2026-08-05",
+      "id": "REC-008",
+      "owner": "h.iqbal"
+    },
+    {
+      "amount": 4600.0,
+      "branded_summary": "CEDX work item REC-009 (ONBOARDING) for i.rossi, amount 4600.0.",
+      "category": "ONBOARDING",
+      "deadline": "2026-07-30",
+      "id": "REC-009",
+      "owner": "i.rossi"
+    },
+    {
+      "amount": 4650.0,
+      "branded_summary": "CEDX work item REC-017 (REPORT) for q.abate, amount 4650.0.",
+      "category": "REPORT",
+      "deadline": "2026-07-24",
+      "id": "REC-017",
+      "owner": "q.abate"
+    },
+    {
+      "amount": 5150.0,
+      "branded_summary": "CEDX work item REC-018 (REVIEW) for r.ferreira, amount 5150.0.",
+      "category": "REVIEW",
+      "deadline": "2026-08-03",
+      "id": "REC-018",
+      "owner": "r.ferreira"
+    },
+    {
+      "amount": 4850.0,
+      "branded_summary": "CEDX work item REC-019 (ONBOARDING) for s.haque, amount 4850.0.",
+      "category": "ONBOARDING",
+      "deadline": "2026-07-27",
+      "id": "REC-019",
+      "owner": "s.haque"
+    },
+    {
+      "amount": 5250.0,
+      "branded_summary": "CEDX work item REC-020 (REPORT) for t.novak, amount 5250.0.",
+      "category": "REPORT",
+      "deadline": "2026-08-02",
+      "id": "REC-020",
+      "owner": "t.novak"
+    },
+    {
+      "amount": 5300.0,
+      "branded_summary": "CEDX work item REC-006 (RENEWAL) for f.haddad, amount 5300.0.",
+      "category": "RENEWAL",
+      "deadline": "2026-07-18",
+      "id": "REC-006",
+      "owner": "f.haddad"
+    },
+    {
+      "amount": 4750.0,
+      "branded_summary": "CEDX work item REC-016 (RENEWAL) for p.larsen, amount 4750.0.",
+      "category": "RENEWAL",
+      "deadline": "2026-07-23",
+      "id": "REC-016",
+      "owner": "p.larsen"
+    },
+    {
+      "amount": 4700.0,
+      "branded_summary": "CEDX work item REC-007 (REVIEW) for g.silva, amount 4700.0.",
+      "category": "REVIEW",
+      "deadline": "2026-07-22",
+      "id": "REC-007",
+      "owner": "g.silva"
+    },
+    {
+      "amount": 5100.0,
+      "branded_summary": "CEDX work item REC-010 (INTAKE) for j.cohen, amount 5100.0.",
+      "category": "INTAKE",
+      "deadline": "2026-07-25",
+      "id": "REC-010",
+      "owner": "j.cohen"
+    }
+  ]
+}

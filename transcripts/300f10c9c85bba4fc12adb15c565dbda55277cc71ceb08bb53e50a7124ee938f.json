@@ -1,0 +1,21 @@
+{
+  "agent": "worker",
+  "model": "gpt-4o-mini",
+  "prompt_version": "worker-v1",
+  "request": {
+    "record_id": "REC-018",
+    "prompt_version": "worker-v1",
+    "source_hash": "sha256:69094891717e6610c0e00ef0864f3cb9d62cf1f155231a02ebb05bf2eaba367e",
+    "is_retry": false
+  },
+  "response": {
+    "id": "REC-018",
+    "owner": "r.ferreira",
+    "category": "REVIEW",
+    "amount": 5150.0,
+    "deadline": "2026-08-03",
+    "branded_summary": "CEDX work item REC-018 (REVIEW) for r.ferreira, amount 5150.0."
+  },
+  "response_hash": "sha256:300f10c9c85bba4fc12adb15c565dbda55277cc71ceb08bb53e50a7124ee938f",
+  "delivered_fields_hash": "sha256:300f10c9c85bba4fc12adb15c565dbda55277cc71ceb08bb53e50a7124ee938f"
+}

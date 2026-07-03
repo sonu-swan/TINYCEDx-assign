@@ -1,0 +1,21 @@
+{
+  "agent": "worker",
+  "model": "gpt-4o-mini",
+  "prompt_version": "worker-v1",
+  "request": {
+    "record_id": "REC-006",
+    "prompt_version": "worker-v1",
+    "source_hash": "sha256:546cf7b76e36228f145171a06920a008c822eff337912da2d65116a6ba487bc6",
+    "is_retry": false
+  },
+  "response": {
+    "id": "REC-006",
+    "owner": "f.haddad",
+    "category": "RENEWAL",
+    "amount": 5300.0,
+    "deadline": "2026-07-18",
+    "branded_summary": "CEDX work item REC-006 (RENEWAL) for f.haddad, amount 5300.0."
+  },
+  "response_hash": "sha256:0d142c25c8b5084ba067dc86a3a1e6f01b7efe457f285e22118c41698a34fef8",
+  "delivered_fields_hash": "sha256:0d142c25c8b5084ba067dc86a3a1e6f01b7efe457f285e22118c41698a34fef8"
+}

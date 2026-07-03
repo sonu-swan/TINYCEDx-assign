@@ -1,0 +1,21 @@
+{
+  "agent": "worker",
+  "model": "gpt-4o-mini",
+  "prompt_version": "worker-v1",
+  "request": {
+    "record_id": "REC-019",
+    "prompt_version": "worker-v1",
+    "source_hash": "sha256:25aacdd95bd4c24ba7603c38557c63eeb1c929cd5ef54d9ef44b9a95c660244a",
+    "is_retry": false
+  },
+  "response": {
+    "id": "REC-019",
+    "owner": "s.haque",
+    "category": "ONBOARDING",
+    "amount": 4850.0,
+    "deadline": "2026-07-27",
+    "branded_summary": "CEDX work item REC-019 (ONBOARDING) for s.haque, amount 4850.0."
+  },
+  "response_hash": "sha256:f87bebac4c996b61e147f77f3dad8d1a812a97ab5e0afc27a4e2443e6981b599",
+  "delivered_fields_hash": "sha256:f87bebac4c996b61e147f77f3dad8d1a812a97ab5e0afc27a4e2443e6981b599"
+}

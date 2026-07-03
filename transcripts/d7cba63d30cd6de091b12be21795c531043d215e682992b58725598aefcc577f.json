@@ -1,0 +1,21 @@
+{
+  "agent": "worker",
+  "model": "gpt-4o-mini",
+  "prompt_version": "worker-v1",
+  "request": {
+    "record_id": "REC-017",
+    "prompt_version": "worker-v1",
+    "source_hash": "sha256:1ec239c71857722bc4f680f30c98925b9cc5206a7a2e55dbf767b783a5eb3b11",
+    "is_retry": false
+  },
+  "response": {
+    "id": "REC-017",
+    "owner": "q.abate",
+    "category": "REPORT",
+    "amount": 4650.0,
+    "deadline": "2026-07-24",
+    "branded_summary": "CEDX work item REC-017 (REPORT) for q.abate, amount 4650.0."
+  },
+  "response_hash": "sha256:d7cba63d30cd6de091b12be21795c531043d215e682992b58725598aefcc577f",
+  "delivered_fields_hash": "sha256:d7cba63d30cd6de091b12be21795c531043d215e682992b58725598aefcc577f"
+}

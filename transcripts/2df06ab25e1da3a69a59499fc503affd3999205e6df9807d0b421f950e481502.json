@@ -1,0 +1,21 @@
+{
+  "agent": "worker",
+  "model": "gpt-4o-mini",
+  "prompt_version": "worker-v1",
+  "request": {
+    "record_id": "REC-004",
+    "prompt_version": "worker-v1",
+    "source_hash": "sha256:0bac967547fbc73ef4393a8f1c0a16cc1039edbee875aeb45017d1d9810811e6",
+    "is_retry": false
+  },
+  "response": {
+    "id": "REC-004",
+    "owner": "d.kapoor",
+    "category": "REPORT",
+    "amount": 6100.0,
+    "deadline": "2026-08-01",
+    "branded_summary": "CEDX work item REC-004 (REPORT) for d.kapoor, amount 6100.0."
+  },
+  "response_hash": "sha256:2df06ab25e1da3a69a59499fc503affd3999205e6df9807d0b421f950e481502",
+  "delivered_fields_hash": "sha256:2df06ab25e1da3a69a59499fc503affd3999205e6df9807d0b421f950e481502"
+}

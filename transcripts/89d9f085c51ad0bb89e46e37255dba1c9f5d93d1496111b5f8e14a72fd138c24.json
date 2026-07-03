@@ -1,0 +1,21 @@
+{
+  "agent": "worker",
+  "model": "gpt-4o-mini",
+  "prompt_version": "worker-v1",
+  "request": {
+    "record_id": "REC-008",
+    "prompt_version": "worker-v1",
+    "source_hash": "sha256:d10b38572a1773dc372c9594ca3ad333e99431fde419886d6361f1489cd6441a",
+    "is_retry": false
+  },
+  "response": {
+    "id": "REC-008",
+    "owner": "h.iqbal",
+    "category": "REPORT",
+    "amount": 5000.0,
+    "deadline": "2026-08-05",
+    "branded_summary": "CEDX work item REC-008 (REPORT) for h.iqbal, amount 5000.0."
+  },
+  "response_hash": "sha256:89d9f085c51ad0bb89e46e37255dba1c9f5d93d1496111b5f8e14a72fd138c24",
+  "delivered_fields_hash": "sha256:89d9f085c51ad0bb89e46e37255dba1c9f5d93d1496111b5f8e14a72fd138c24"
+}

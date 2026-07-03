@@ -1,0 +1,21 @@
+{
+  "agent": "worker",
+  "model": "gpt-4o-mini",
+  "prompt_version": "worker-v1",
+  "request": {
+    "record_id": "REC-002",
+    "prompt_version": "worker-v1",
+    "source_hash": "sha256:6adc60795047e062b8a1c5cb86373a1dbad601854b96e3e5808a388b78a79afe",
+    "is_retry": false
+  },
+  "response": {
+    "id": "REC-002",
+    "owner": "b.ortiz",
+    "category": "RENEWAL",
+    "amount": 5200.0,
+    "deadline": "2026-07-20",
+    "branded_summary": "CEDX work item REC-002 (RENEWAL) for b.ortiz, amount 5200.0."
+  },
+  "response_hash": "sha256:63645136de5fab3f2e7b473dc45d20aeee4bbc8fa4adb3d2dd1d2cdfdcb21b7d",
+  "delivered_fields_hash": "sha256:63645136de5fab3f2e7b473dc45d20aeee4bbc8fa4adb3d2dd1d2cdfdcb21b7d"
+}

@@ -1,0 +1,39 @@
+{
+  "exceptions": [
+    {
+      "id": "REC-011",
+      "reason_code": "STALE",
+      "reason_class": "A"
+    },
+    {
+      "id": "REC-012",
+      "reason_code": "MISSING_INPUT",
+      "reason_class": "A"
+    },
+    {
+      "id": "REC-013",
+      "reason_code": "OUTLIER",
+      "reason_class": "A"
+    },
+    {
+      "id": "REC-021",
+      "reason_code": "LOW_CONFIDENCE",
+      "reason_class": "A"
+    },
+    {
+      "id": "REC-022",
+      "reason_code": "INJECTION_BLOCKED",
+      "reason_class": "A"
+    },
+    {
+      "id": "REC-014",
+      "reason_code": "INJECTION_BLOCKED",
+      "reason_class": "A"
+    },
+    {
+      "id": "REC-015",
+      "reason_code": "LOW_CONFIDENCE",
+      "reason_class": "A"
+    }
+  ]
+}

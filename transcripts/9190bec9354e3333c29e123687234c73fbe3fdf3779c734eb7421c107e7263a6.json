@@ -1,0 +1,21 @@
+{
+  "agent": "worker",
+  "model": "gpt-4o-mini",
+  "prompt_version": "worker-v1",
+  "request": {
+    "record_id": "REC-003",
+    "prompt_version": "worker-v1",
+    "source_hash": "sha256:6ada3093716cb39647a87e1fe269c7722a27ff904e0305853f9fa4fa27180a0e",
+    "is_retry": false
+  },
+  "response": {
+    "id": "REC-003",
+    "owner": "c.nguyen",
+    "category": "REVIEW",
+    "amount": 3900.0,
+    "deadline": "2026-07-10",
+    "branded_summary": "CEDX work item REC-003 (REVIEW) for c.nguyen, amount 3900.0."
+  },
+  "response_hash": "sha256:9190bec9354e3333c29e123687234c73fbe3fdf3779c734eb7421c107e7263a6",
+  "delivered_fields_hash": "sha256:9190bec9354e3333c29e123687234c73fbe3fdf3779c734eb7421c107e7263a6"
+}

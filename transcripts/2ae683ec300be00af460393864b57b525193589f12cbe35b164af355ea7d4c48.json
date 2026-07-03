@@ -1,0 +1,21 @@
+{
+  "agent": "worker",
+  "model": "gpt-4o-mini",
+  "prompt_version": "worker-v1",
+  "request": {
+    "record_id": "REC-009",
+    "prompt_version": "worker-v1",
+    "source_hash": "sha256:e26952a685f16fa4c0a6daa3a42b5391fc4a2def8cf122175ac7aa47a89f1ea3",
+    "is_retry": false
+  },
+  "response": {
+    "id": "REC-009",
+    "owner": "i.rossi",
+    "category": "ONBOARDING",
+    "amount": 4600.0,
+    "deadline": "2026-07-30",
+    "branded_summary": "CEDX work item REC-009 (ONBOARDING) for i.rossi, amount 4600.0."
+  },
+  "response_hash": "sha256:2ae683ec300be00af460393864b57b525193589f12cbe35b164af355ea7d4c48",
+  "delivered_fields_hash": "sha256:2ae683ec300be00af460393864b57b525193589f12cbe35b164af355ea7d4c48"
+}

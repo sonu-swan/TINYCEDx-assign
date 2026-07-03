@@ -1,0 +1,21 @@
+{
+  "agent": "worker",
+  "model": "gpt-4o-mini",
+  "prompt_version": "worker-v1",
+  "request": {
+    "record_id": "REC-010",
+    "prompt_version": "worker-v1",
+    "source_hash": "sha256:e10054a5a4b7e05f2d04e1dc440b5da208946b1f5795f0c786a2c0e95ef0c18a",
+    "is_retry": false
+  },
+  "response": {
+    "id": "REC-010",
+    "owner": "j.cohen",
+    "category": "INTAKE",
+    "amount": 5100.0,
+    "deadline": "2026-07-25",
+    "branded_summary": "CEDX work item REC-010 (INTAKE) for j.cohen, amount 5100.0."
+  },
+  "response_hash": "sha256:4c5b437c07b40899808dc2ee9ca8198c1330f0e65708710eb496eedf068dbf50",
+  "delivered_fields_hash": "sha256:4c5b437c07b40899808dc2ee9ca8198c1330f0e65708710eb496eedf068dbf50"
+}

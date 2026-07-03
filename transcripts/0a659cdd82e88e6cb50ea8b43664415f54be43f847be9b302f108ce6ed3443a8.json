@@ -1,0 +1,21 @@
+{
+  "agent": "worker",
+  "model": "gpt-4o-mini",
+  "prompt_version": "worker-v1",
+  "request": {
+    "record_id": "REC-020",
+    "prompt_version": "worker-v1",
+    "source_hash": "sha256:e7f12adb6bd5b10171e66720f388c7e5c62ac54d47766ae6115bd966b695b7e6",
+    "is_retry": false
+  },
+  "response": {
+    "id": "REC-020",
+    "owner": "t.novak",
+    "category": "REPORT",
+    "amount": 5250.0,
+    "deadline": "2026-08-02",
+    "branded_summary": "CEDX work item REC-020 (REPORT) for t.novak, amount 5250.0."
+  },
+  "response_hash": "sha256:0a659cdd82e88e6cb50ea8b43664415f54be43f847be9b302f108ce6ed3443a8",
+  "delivered_fields_hash": "sha256:0a659cdd82e88e6cb50ea8b43664415f54be43f847be9b302f108ce6ed3443a8"
+}
